@@ -403,14 +403,27 @@ section:nth-child(2).section{
     left: 3.5rem;
 }
 
-.team-observer{
+.team-observer-head{
     opacity: 0;
     scale: 0;
     transform: translate(-110vw);
     transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, transform 2000ms ease-in-out;
 }
 
-.team-observer.show-team{
+.team-observer-head.show-team{
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0vw);
+}
+
+.team-observer-body{
+    opacity: 0;
+    scale: 0;
+    transform: translate(-110vw);
+    transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, transform 2000ms ease-in-out;
+}
+
+.team-observer-body.show-team{
     opacity: 1;
     scale: 1;
     transform: translateX(0vw);

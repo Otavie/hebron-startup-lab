@@ -472,7 +472,7 @@ section:nth-child(2).section {
   left: 3.5rem;
 }
 
-.team-observer {
+.team-observer-head {
   opacity: 0;
   scale: 0;
   -webkit-transform: translate(-110vw);
@@ -483,7 +483,25 @@ section:nth-child(2).section {
   transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, transform 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
 }
 
-.team-observer.show-team {
+.team-observer-head.show-team {
+  opacity: 1;
+  scale: 1;
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
+}
+
+.team-observer-body {
+  opacity: 0;
+  scale: 0;
+  -webkit-transform: translate(-110vw);
+          transform: translate(-110vw);
+  -webkit-transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, transform 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+}
+
+.team-observer-body.show-team {
   opacity: 1;
   scale: 1;
   -webkit-transform: translateX(0vw);

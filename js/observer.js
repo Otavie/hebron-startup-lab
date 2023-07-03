@@ -81,13 +81,13 @@ aboutI.forEach(about => {
 });
 
 
-const teamObserver = document.querySelectorAll('.team-observer')
 
 const optionsThree = {
     threshold: '0.1',
 };
 
-const observerThree = new IntersectionObserver(function (entries, observerThree) {
+const teamObserverHead = document.querySelector('.team-observer-head');
+const observerThreeHead = new IntersectionObserver(function (entries, observerThreeHead) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             entry.target.classList.remove('show-team');
@@ -97,6 +97,17 @@ const observerThree = new IntersectionObserver(function (entries, observerThree)
     });
 }, optionsThree)
 
-teamObserver.forEach(team => {
-    observerThree.observe(team);
-});
+observerThreeHead.observe(teamObserverHead)
+
+const teamObserverBody = document.querySelector('.team-observer-body');
+const observeThreeBody = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting){
+            entry.target.classList.remove('show-team');
+        } else{
+            entry.target.classList.add('show-team')
+        }
+    })
+}, optionsThree)
+
+observeThreeBody.observe(teamObserverBody);
