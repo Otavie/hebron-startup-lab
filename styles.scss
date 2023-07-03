@@ -63,7 +63,7 @@ nav ul li a{
 .partners h2,
 #footer h4,
 .flash-slide h1{
-    font-family: var(--ff-header);
+    font-family: var(--ff-primary-head);
 }
 
 .partners h2,
@@ -84,6 +84,8 @@ nav ul li a{
 
 main{
     background-color: var(--primary-color);
+    min-height: 200vh;
+    overflow-y: hidden;
 }
 
 #copyright,
@@ -228,11 +230,11 @@ main{
 
 .flash-slide h1, .flash-slide h3{text-transform: uppercase;}
 
-.flash-slide h1{font-size: 5rem;}
+.flash-slide h1{font-size: 3.5rem;}
 
 .flash-slide h3{
     text-transform: lowercase;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 300;
     font-family: 'Satisfy', cursive;
     margin-bottom: -1rem;
@@ -265,6 +267,7 @@ main{
     top: 100vh;
     margin: 0 auto;
     overflow-x: hidden;
+    min-height: 200vh;
 }
 
 .section{
@@ -415,6 +418,15 @@ section:nth-child(2).section{
 
 .about-intersection{
     margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+    .flash-slide h1{font-size: 5rem;}
+
+    .flash-slide h3{
+        font-size: 2.5rem;
+    }
+
 }
 
 @media screen and (min-width: 700px) {
@@ -742,6 +754,7 @@ footer{
 .footer__hsl{
     min-width: 300px;
     font-size: 0.85rem;
+    font-size: 8.5rem;
     flex-direction: column;
     text-align: center;
 }
@@ -760,6 +773,8 @@ footer{
     line-height: 25px;
     font-size: 0.9rem;
     text-shadow: 1px 0 0.5px rgb(184, 137, 137);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer__address__contact-hsl{
@@ -903,7 +918,6 @@ footer{
     }
 }
 
-
 @media screen and (min-width: 840px) {
     .flash-slide h3.hebronStartUpLab{
         font-size: 2.75rem;
@@ -919,7 +933,6 @@ footer{
         border-radius: 15px;
     }
 
-
     .hsl-description--landing{
         height: 100px;
         background-color: rgba(0, 0, 0, 0.582);
@@ -930,8 +943,6 @@ footer{
         align-items: center;
         width: 500px;
     }
-
-
 
     .footer__hsl{
         display: flex;
