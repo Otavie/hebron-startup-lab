@@ -82,32 +82,32 @@ aboutI.forEach(about => {
 
 
 
-const optionsThree = {
-    threshold: '0.1',
-};
+// const optionsThree = {
+//     threshold: '0.1',
+// };
 
-const teamObserverHead = document.querySelector('.team-observer-head');
-const observerThreeHead = new IntersectionObserver(function (entries, observerThreeHead) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            entry.target.classList.remove('show-team');
-        } else {
-            entry.target.classList.add('show-team');
-        }
-    });
-}, optionsThree)
+// const teamObserverHead = document.querySelector('.team-observer-head');
+// const observerThreeHead = new IntersectionObserver(function (entries, observerThreeHead) {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             entry.target.classList.remove('show-team');
+//         } else {
+//             entry.target.classList.add('show-team');
+//         }
+//     });
+// }, optionsThree)
 
-observerThreeHead.observe(teamObserverHead)
+// observerThreeHead.observe(teamObserverHead)
 
-const teamObserverBody = document.querySelector('.team-observer-body');
-const observeThreeBody = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting){
-            entry.target.classList.remove('show-team');
-        } else{
-            entry.target.classList.add('show-team')
-        }
-    })
-}, optionsThree)
+// const teamObserverBody = document.querySelector('.team-observer-body');
+// const observeThreeBody = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting){
+//             entry.target.classList.remove('show-team');
+//         } else{
+//             entry.target.classList.add('show-team')
+//         }
+//     })
+// }, optionsThree)
 
-observeThreeBody.observe(teamObserverBody);
+// observeThreeBody.observe(teamObserverBody);
