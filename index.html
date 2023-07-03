@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>  
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/alumni.css">
+</head>
+<body>
+    <div class="container">
+        <section class="container-landing" id="container-landing">
+            <div id="ideas" class="flash-slide__container">
+                <div class="flash-slide">
+                    <h3 class="from">From</h3>
+                    <h1 class="ideasH1"><span class="first-half id">ID</span><span class="second-half eas">EAS</span></h1>
+                </div>
+            </div>
+
+            <div id="concepts" class="flash-slide__container">
+                <div class="flash-slide">
+                    <h3 class="to">To</h3>
+                    <h1 class="h1-for-concepts"><span class="first-half con">CON</span><span class="second-half">CEPTS</span></h1>
+                </div>
+            </div>
+
+            <div id="products" class="flash-slide__container">
+                <div class="flash-slide">
+                    <h3 class="then">Then</h3>
+                    <h1 class="productsH1"><span class="first-half pro">PRO</span><span class="second-half ducts">DUCTS</span></h1>
+                </div>
+            </div>
+
+            <div id="market" class="flash-slide__container">
+                <div class="flash-slide">
+                    <div class="flash-slide_market-left"></div>
+                    <h3 class="finally">and Finally to</h3>
+                    <h1 class="flash-slide_market-h1"><span class="first-half mar">MAR</span><span class="second-half ket">KET</span></h1>
+                    <div class="marketRight"></div>
+                </div>
+            </div>
+
+            <div class="welcome">
+                <i id="mobile-menu" class="fa-solid fa-bars"></i>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a data-nav="home" class="active" href="index.html">home</a></li>
+                        <li><a data-nav="hsl-alumni" class="each-nav" href="#hsl-alumni">hsl alumni</a></li>
+                        <li><a data-nav="hsl-team" class="each-nav" href="#hsl-team">hsl team</a></li>
+                        <li><a data-nav="about-hsl" class="each-nav" href="#about-hsl">about hsl</a></li>
+                        <li><a data-nav="contact-hsl" class="each-nav" href="#footer">contact hsl</a></li>
+                        <li><a data-nav="hsl-plus" class="each-nav" href="#hsl-plus">hsl +</a>
+                            <div class="hsl-plus__sub-menu">
+                                <ul>
+                                    <li><a href="#">hsl shop</a></li>
+                                    <li><a href="#">hsl blog</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="logo-container" id="logo-container">
+                    <a href="index.html"><img id="logo" src="./img/hsl_logo.png" alt="Logo"></a>
+                </div>
+                
+                <div id="backgroundOverlay" class="flash__container">
+                    
+                    <div class="landing-page">
+                        <div class="landing-page__slider" data-sliders>
+
+                            <div class="landing-page__slider__each-slide" id="first-slide">
+
+                                <div class="landing-page__slider__each-slide__img" id="first-image">
+                                    <img class="landing-image" src="img/landing1.jpg" alt="Background">
+                                    <div class="welcome-text-container">
+                                        <div class="welcome-text">
+                                            <div class="welcome-text-head">
+                                                <h2>Welcome to HSL</h2>
+                                            </div>
+                                            <div class="welcome-text-paragraph">
+                                                <p>
+                                                    <span class="three-dots">...</span>Nigeria's s first University-based open living lab for entrepreneurs, investors and startups.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="landing-page__slider__each-slide" id="second-slide">
+                                <div class="landing-page__slider__each-slide__text" id="second-text">
+                                    <h1>We <span class="our-process">Ideate</span></h1>
+                                    <p>
+                                        Brainstorm and generate new business ideas that align with market needs, technological trends and the lab's expertise.
+                                    </p>
+                                    <h1 class="landing-page__slider__each-slide__text__h1-bottom">1</h1>
+                                </div>
+                    
+                                <div class="landing-page__slider__each-slide__img" id="second-image">
+                                    <img src="img/landing2.jpg" alt="Ideation">
+                                </div>
+                            </div>
+                
+                            <div class="landing-page__slider__each-slide" id="third-slide">
+                                <div class="landing-page__slider__each-slide__text" id="third-text">
+                                    <h1>We <span class="our-process">Validate</span></h1>
+                                    <p>
+                                        Conducts market research, competitor analysis, and feasibility studies to assess the viability and potential success of each idea.
+                                    </p>
+                                    <h1 class="landing-page__slider__each-slide__text__h1-bottom">2</h1>
+                                </div>
+                    
+                                <div class="landing-page__slider__each-slide__img" id="third-image">
+                                    <img src="img/landing3.jpg" alt="Validation">
+                                </div>
+                            </div>
+                
+                            <div class="landing-page__slider__each-slide" id="fourth-slide">
+                                <div class="landing-page__slider__each-slide__text" id="fourth-text">
+                                    <h1>We <span class="our-process">Incubate</span></h1>
+                                    <p>
+                                        Startups receive guidance and resources to develop their products or services, build minimum viable products (MVPs), and refine their business strategies.
+                                    </p>
+                                    <h1 class="landing-page__slider__each-slide__text__h1-bottom">3</h1>
+                                </div>
+                    
+                                <div class="landing-page__slider__each-slide__img" id="fourth-image">
+                                    <img src="img/landing4.jpg" alt="Incubation">
+                                </div>
+                            </div>
+                
+                            <div class="landing-page__slider__each-slide" id="last-slide">
+                                <div class="landing-page__slider__each-slide__text" id="last-text">
+                                    <h1>We <span class="our-process">Accelerate</span></h1>
+                                    <p>
+                                        Scale up startups, provision of intensive support like funding, strategic partnerships, etc. to help startups grow rapidly and achieve their business goals.
+                                    </p>
+                                    <h1 class="landing-page__slider__each-slide__text__h1-bottom">4</h1>
+                                </div>
+                    
+                                <div class="landing-page__slider__each-slide__img" id="last-image">
+                                    <img src="img/landing5.jpg" alt="Acceleration">
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <main class="overall-content-container">
+            <div class="inner-content-container">
+                <section class="section hsl-alumni" id="hsl-alumni">
+                    <div class="hsl-alumni-inner">
+                        <div class="hsl-alumni-head">
+                            <h1>HSL Alumni</h1>
+                        </div>
+                        <div class="hsl-alumni-content">
+                            <div class="hsl-alumni-slider-container hsl-alumni-slider-first">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder2Square.jpg" alt="Alumni 1">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Jessica Femi</h2>
+                                            <h3>Founder, ABC</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder3Square.jpg" alt="Alumni 2">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Musa Bello</h2>
+                                            <h3>Founder, ChiCar</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder4Square.jpg" alt="Alumni 3">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Nnamdi Loveday</h2>
+                                            <h3>Founder, dCleanest</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder5Square.jpg" alt="Alumni 4">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Beauty Godson</h2>
+                                            <h3>Founder, LadiTech</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder6Square.jpg" alt="Alumni 5">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Flora Otis</h2>
+                                            <h3>Founder, Otis Fashion</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder7Square.jpg" alt="Alumni 6">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Blake Learner</h2>
+                                            <h3>Founder, ABC Construct</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder8Square.jpg" alt="Alumni 7">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Jeremiah Cashflow</h2>
+                                            <h3>Founder, Cashflow Studio</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder9Square.jpg" alt="Alumni 8">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Otavie Winner</h2>
+                                            <h3>Founder, The StudioTech</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder10Square.jpg" alt="Alumni 9">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Sharon Rice</h2>
+                                            <h3>Founder, LightWeight Inc</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder11Square.jpg" alt="Alumni 10">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Fancy Zack</h2>
+                                            <h3>Founder, FancyMe.Com</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder12Square.jpg" alt="Alumni 11">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Smoky Livingstone</h2>
+                                            <h3>Founder, SmikeLite</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder13Square.jpg" alt="Alumni 12">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Merlin Hart</h2>
+                                            <h3>Founder, Merlanians</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder14Square.jpg" alt="Alumni 13">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Emmanuella Tall</h2>
+                                            <h3>Founder, FreshWater Inc</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder15Square.jpg" alt="Alumni 14">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Lani Adams</h2>
+                                            <h3>Founder, House of LA</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hsl-alumni-slider-container hsl-alumni-slider-last">
+                                <div class="hsl-alumni-slider-img">
+                                    <img src="img/founder16Square.jpg" alt="Alumni 15">
+                                </div>
+                                <div class="hsl-alumni-overlay">
+                                    <div class="hsl-alumni-overlay-text">
+                                        <div class="hsl-alumni-overlay-header">
+                                            <h2>Life Otavie</h2>
+                                            <h3>Founder, JavaScript-Father</h3>
+                                        </div>
+                                        <div class="overlay-paragraph">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, impedit dolorem numquam tempora sint cumque quae eos harum hic illum natus iusto, officiis doloremque accusantium. Dolorem perferendis optio rem aperiam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="hsl-alumni-details">
+                            <P>Click image for details</P>
+                        </div>
+ 
+                        <div class="hsl-alumni-slider-controls">
+                            <button class="hsl-alumni-slider hsl-alumni-slider-prev">&#8701;</button>
+                            <button class="hsl-alumni-slider hsl-alumni-slider-next">&#8702;</button>
+                        </div>
+                       
+                    </div>
+
+                </section>
+
+                <section class="section hsl-team" id="hsl-team">
+                    <div class="hsl-team__content">
+                        <div class="hsl-team__content__header-text team-observer">
+                            <h1>The Team</h1>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad labore perferendis ea quae molestias! Totam, ab provident, a eaque unde commodi nulla...
+                            </p>
+                        </div>
+
+                        <div class="hsl-team__content__slider-container team-observer" data-control>
+                            <button class="control-button prev" data-control-button="prev">&#8249;</button>
+                            <button class="control-button next" data-control-button="next">&#8250;</button>
+                            
+                            <div class="team-slide-container" data-slides>
+
+                                <div class="slide-hsl-member">
+                                    <div class="img-slide">
+                                        <img src="img/chairman.jpg" alt="Chief Operating Officer">
+                                    </div>
+                                    <div class="team-slide-text">
+                                        <h2>Chief Operating Officer</h2>
+                                        <p>
+                                            First Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="slide-hsl-member">
+                                    <div class="img-slide">
+                                        <img src="img/head-community-engagement.jpg" alt="Head of Community Engagement">
+                                    </div>
+                                    <div class="team-slide-text">
+                                        <h2>Head of Community Engagement</h2>
+                                        <p>
+                                            Second Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="slide-hsl-member">
+                                    <div class="img-slide">
+                                        <img src="img/marketing-specialist.jpg" alt="Marketing Specialist">
+                                    </div>
+                                    <div class="team-slide-text">
+                                        <h2>Marketing Specialist</h2>
+                                        <p>
+                                            Third Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </p>
+                                    </div>
+                                </div>
+                
+                                <div class="slide-hsl-member">
+                                    <div class="img-slide">
+                                        <img src="img/technical-lead.jpg" alt="Technical Lead">
+                                    </div>
+                                    <div class="team-slide-text">
+                                        <h2>Technical Lead</h2>
+                                        <p>
+                                            Fourth Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </p>
+                                    </div>
+                                </div>
+                
+                                <div class="slide-hsl-member"  data-active>
+                                    <div class="img-slide">
+                                        <img src="img/curator.jpg" alt="The Curator">
+                                    </div>
+                                    <div class="team-slide-text">
+                                        <h2>The Curator</h2>
+                                        <p>
+                                            Fifth Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                               
+                    </div>
+
+                </section>
+
+                <section class="section about-hsl" id="about-hsl">
+                    <div class="about-hsl__heading aboutHSLSubSectionsHeader about-intersection">
+                        <h1>About HSL</h1>
+                        <p>
+                            Hebron Start-up Lab (HSL) is Nigeria's s first University-based open living lab for entrepreneurs, investors and startups. At HSL, we take <span class="ideasinline inline"><a href="index.html">ideas</a></span> to <span class="conceptsinline inline"><a href="index.html">concepts</a></span>, make them <span class="productsinline inline"><a href="index.html">products</a></span> and finally send them to the <span class="marketinline inline"><a href="index.html">market.</a></span>
+                        </p>
+                    </div>
+
+                    <div class="about-hsl__heading aboutHSLSubSections communities-container">
+                        <div class="about-intersection">
+                            <h2>Our Communities</h2>
+                            <p>
+                                The HSL community is made up 4 arms - the creators, the creatives, the founders and the executors.
+                            </p>
+                        </div>
+
+                        <div class="different-communities">
+                            <div class="group-of-two creatives-group">
+                                <div class="creatives-container about-intersection">
+                                    <div>
+                                        <img class="communities-img" src="img/creatives.jpg" alt="Creatives">
+                                    </div>
+                                    <div class="who-community">
+                                        <h3>The Creatives</h3>
+                                        <p>
+                                            They are made up artistic, imaginative and innovative set of humans with minds for deep and great ideas and concepts. They include <span class="inline">creative photographers</span>, <span class="inline">creative videographers</span>, <span class="inline">designers (artistic and UI/UX designers)</span>, etc.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="creators-container about-intersection">
+                                    <div>
+                                        <img class="communities-img" src="img/programmer.jpg" alt="Creatives">
+                                    </div>
+                                    <div class="who-community">
+                                        <h3>The Creators</h3>
+                                        <p>
+                                            These individuals generate ideas and bring them to life. They visualize what they want to be and then find a means to bring their or others' ideas to life. They consist of <span class="inline">web developers</span>, <span class="inline">programmers</span>, and others.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="group-of-two founders-group">
+                                <div class="executors-container about-intersection">
+                                    <div>
+                                        <img class="communities-img" src="img/executors.jpg" alt="Executors">
+                                    </div>
+                                    <div class="who-community">
+                                        <h3>The Executors</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="founders-container about-intersection">
+                                    <div>
+                                        <img class="communities-img" src="img/founders.jpg" alt="Founders">
+                                    </div>
+                                    <div class="who-community">
+                                        <h3>The Founders</h3>
+                                        <p>
+                                            They are business-oriented. They nurture start-ups and start-up ideas into viable business. They are risks takers willing to blaze new trails. They come up with business ideas, sort out funding and partnerships for growth and expansion. They are <span class="inline">business builders</span> and <span class="inline">nurturers</span> of business ideas.
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="partners about-intersection">
+                        <h2>Our Partners</h2>
+
+                        <div class="our-partners">
+                            <div class="partners-sliders">
+                            
+                                <div class="partners-slide">
+                                    <a id="google" href="https://about.google"><img src="img/google.png" alt="Google"></a>
+                                </div>
+                            
+                                <div class="partners-slide">
+                                    <a id="britishcouncil" href="https://www.britishcouncil.org.ng"><img src="img/britishcouncil.png" alt="British Council"></a>
+                                </div>
+                            
+                                <div class="partners-slide">
+                                    <a id="wolverhampton" href="https://www.wlv.ac.uk"><img src="img/wolverhampton.png" alt="Wolverhampton"></a>
+                                </div>
+                                
+                                <div class="partners-slide">
+                                    <a id="tableau" href="https://www.tableau.com"><img src="img/tableau.png" alt="Tableau"></a>
+                                </div>
+                                
+                                <div class="partners-slide">
+                                    <a id="cavista" href="https://www.cavistatech.com"><img src="img/cavista.png" alt="Cavista"></a>
+                                </div>
+                            
+                                <div class="partners-slide">
+                                    <a id="meraki" href="https://meraki.cisco.com"><img src="img/ciscomeraki.png" alt="Cisco Meraki"></a>
+                                </div>
+                            
+                                <div class="partners-slide">
+                                    <a id="co_creationhub" href="https://cchubnigeria.com"><img src="img/co_creationhub.png" alt="Co Creation Hub"></a>
+                                </div>
+                            
+                                <div class="partners-slide">
+                                    <a id="design_competition" href="https://paadc.com"><img src="img/design_competition.png" alt="Design Competition"></a>
+                                </div>
+                                
+                                <div class="partners-slide">
+                                    <a id="korapay" href="https://korapay.com"><img src="img/korapay.png" alt="Korapay"></a>
+                                </div>
+                                
+                                <div class="partners-slide">
+                                    <a id="productdive" href="https://productdive.com"><img src="img/productdive.png" alt="Product Dive"></a>
+                                </div>
+                                
+                                <div class="partners-slide">
+                                    <a id="arm" href="https://www.arm.com"><img src="img/arm.png" alt="Arm"></a>
+                                </div>
+                            
+                                <div class="partners-slide">
+                                    <a id="dreamcode" href="https://upi-sponsorships.org/dreamcode"><img src="img/dreamcode.png" alt="Dream Code"></a>
+                                </div>
+                                
+                                <div class="partners-slide">
+                                    <a id="softcom" href="https://softcom.xyz"><img src="img/softcom.png" alt="SoftCom"></a>
+                                </div>
+                                
+                                <div class="partners-slide">
+                                    <a id="thriveagric" href="https://softcom.xyz"><img src="img/thriveagric.png" alt="Thrive Agric"></a>
+                                </div>
+
+                            </div> <!-- End of the Sliders Partners-->
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <footer>
+
+                <section id="contact-hsl">
+                    <div id="footer" class="footer">
+                        <div class="footer__hsl footer-sub-section">
+                            <div>
+                                <a href="index.html"><img class="hslLogoFooter" src="img/greenhslLogo.png" alt="LinkedIn"></a> 
+                            </div>
+                            <div class="hsl-description hsl-description--footer">
+                                <p>Nigeria's s first University-based open living lab for entrepreneurs, investors and startups.</p>
+                            </div>
+                        </div>
+    
+                        <div class="footer__address footer-sub-section">
+                            <h4 class="footer__address__contact-hsl">Contact HSL</h4>
+                            <p class="footer__address__hsl-address">
+                                3rd floor, CUCRID Building, Covenant University,<br>KM 10 Idiroko Rd, 112212, Ota, Nigeria.<br><span id="hsl__email">startup@covenantuniversity.edu.ng</span><br><span id="hsl__call">+23470 650 694 95</span>
+                            </p>
+                        </div>
+                        <div class="socials-media footer-sub-section">
+                            <p>
+                               <a class="linkedin"  href="https://www.linkedin.com/company/hebron-startup-lab/"><img class="socials linkedin" src="img/hslLinkedIn.png" alt="LinkedIn"></a> 
+                               <a class="instagram"  href="https://www.instagram.com/hebronstartup"><img class="socials instagram" src="img/hslInstagram.png" alt="Instagram"></a> 
+                               <a class="twitter"  href="https://twitter.com/HebronStartup"><img class="socials twitter" src="img/hslTwitter.png" alt="Twitter"></a> 
+                               <a class="facebook"  href="https://www.facebook.com/hebronstartup"><img class="socials facebook" src="img/hslFacebook.png" alt="Facebook"></a> 
+                            </p>
+                        </div>
+    
+                        <div id="copyright">
+                            <p>
+                               <a href="index.html">&copy; Hebron Startup Lab</a> 
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+        </main>
+
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/observer.js" defer></script>
+    <script src="js/landing.js"></script>
+</body>
+</html>
