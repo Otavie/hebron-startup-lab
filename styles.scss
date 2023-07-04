@@ -403,43 +403,40 @@ section:nth-child(2).section{
     left: 3.5rem;
 }
 
-// .team-observer-head{
-//     opacity: 0;
-//     scale: 0;
-//     transform: translate(-110vw);
-//     transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, transform 2000ms ease-in-out;
-// }
-
-// .team-observer-head.show-team{
-//     opacity: 1;
-//     scale: 1;
-//     transform: translateX(0vw);
-// }
-
 .team-observer-head{
-    opacity: 1;
-    scale: 1;
-    transform: translateX(0vw);
+    opacity: 0;
+    transform: translateX(100%), scale(0);
+    transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out;
 }
 
-// .team-observer-body{
-//     opacity: 0;
-//     scale: 0;
-//     transform: translate(-110vw);
-//     transition: opacity 2000ms ease-in-out, scale 2000ms ease-in-out, transform 2000ms ease-in-out;
-// }
-
-// .team-observer-body.show-team{
-//     opacity: 1;
-//     scale: 1;
-//     transform: translateX(0vw);
-// }
+.team-observer-head.show-team{
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
 
 .team-observer-body{
-    opacity: 1;
-    scale: 1;
-    transform: translateX(0vw);
+    opacity: 0;
+    transform: translateX(-100%), scale(0);
+    transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out;
 }
+
+.team-observer-body.show-team{
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+
+// .team-observer-head{
+//     opacity: 1;
+//     scale: 1;
+//     transform: translateX(0vw);
+// }
+
+// .team-observer-body{
+//     opacity: 1;
+//     scale: 1;
+//     transform: translateX(0vw);
+// }
 
 .about-intersection{
     margin-bottom: 2rem;

@@ -472,17 +472,35 @@ section:nth-child(2).section {
 }
 
 .team-observer-head {
+  opacity: 0;
+  -webkit-transform: translateX(100%), scale(0);
+          transform: translateX(100%), scale(0);
+  -webkit-transition: opacity 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+}
+
+.team-observer-head.show-team {
   opacity: 1;
-  scale: 1;
-  -webkit-transform: translateX(0vw);
-          transform: translateX(0vw);
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
 }
 
 .team-observer-body {
+  opacity: 0;
+  -webkit-transform: translateX(-100%), scale(0);
+          transform: translateX(-100%), scale(0);
+  -webkit-transition: opacity 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out, transform 2000ms ease-in-out, -webkit-transform 2000ms ease-in-out;
+}
+
+.team-observer-body.show-team {
   opacity: 1;
-  scale: 1;
-  -webkit-transform: translateX(0vw);
-          transform: translateX(0vw);
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
 }
 
 .about-intersection {
