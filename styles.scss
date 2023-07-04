@@ -425,19 +425,6 @@ section:nth-child(2).section{
     transform: translateX(0) scale(1);
 }
 
-
-// .team-observer-head{
-//     opacity: 1;
-//     scale: 1;
-//     transform: translateX(0vw);
-// }
-
-// .team-observer-body{
-//     opacity: 1;
-//     scale: 1;
-//     transform: translateX(0vw);
-// }
-
 .about-intersection{
     margin-bottom: 2rem;
 }
@@ -821,7 +808,6 @@ footer{
 
 }
 
-
 @media screen and (min-width: 760px) {
     .aboutHSLSubSections{
         width: 70vw;
@@ -923,8 +909,7 @@ footer{
 
     #copyright{
         margin-bottom: -60px;
-    }
-    
+    } 
 }
 
 @media screen and (min-width: 940px) {
