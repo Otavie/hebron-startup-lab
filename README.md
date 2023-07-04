@@ -1,6 +1,5 @@
 # HEBRON STARTUP LAB WEB PROJECT
 
-![Hebron Startup Lab Logo](../hebron-startup-lab/img/hsl_logo.png)
 ![Hebron Startup Lab Logo](https://github.com/Otavie/hebron-startup-lab/blob/main/img/greenhslLogo.png)
 
 Welcome to the Hebron Startup Lab web project! This project is a web application built using JavaScript, HTML, and CSS (Sass) to showcase the activities and offerings of Hebron Startup Lab, a vibrant hub for entrepreneurs and startups in Hebron. HSL is Nigeria's s first University-based open living lab for entrepreneurs, investors and startups.
