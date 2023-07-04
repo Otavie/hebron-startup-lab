@@ -1,6 +1,7 @@
 # HEBRON STARTUP LAB WEB PROJECT
 
 ![Hebron Startup Lab Logo](../hebron-startup-lab/img/hsl_logo.png)
+![Hebron Startup Lab Logo](https://github.com/Otavie/hebron-startup-lab/blob/main/img/greenhslLogo.png)
 
 Welcome to the Hebron Startup Lab web project! This project is a web application built using JavaScript, HTML, and CSS (Sass) to showcase the activities and offerings of Hebron Startup Lab, a vibrant hub for entrepreneurs and startups in Hebron. HSL is Nigeria's s first University-based open living lab for entrepreneurs, investors and startups.
 
@@ -25,8 +26,7 @@ Hebron Startup Lab is a dynamic co-working space that fosters innovation and col
 
 - **HSL Alumni Section:** Display some of the list of HSL alumni that are founders or heading startups.
 
-- **Member Profiles:** Highlight the members of the HSL team with detailed profiles. Meet the dedicated members of the Hebron Startup Lab team who work tirelessly to support and empower the startup community:
-    -   
+- **Member Profiles:** Highlight the members of the HSL team with detailed profiles. Meet the dedicated members of the Hebron Startup Lab team who work tirelessly to support and empower the startup community:  
 
 ## HSL Team Members
 
@@ -34,23 +34,23 @@ Meet the dedicated members of the Hebron Startup Lab team who work tirelessly to
 
 1. **Name 1**
    - Role: The Curator
-   - Bio: John is a visionary entrepreneur with a passion for innovation. He co-founded Hebron Startup Lab to create a thriving ecosystem for startups in the region. With his expertise in business strategy, John is committed to driving the lab's mission forward.
+   - Bio: Name 1 is a visionary entrepreneur with a passion for innovation. He co-founded Hebron Startup Lab to create a thriving ecosystem for startups in the region. With his expertise in business strategy, John is committed to driving the lab's mission forward.
 
 2. **Name 2**
    - Role: Chief Operating Officer
-   - Bio: Jane is a dynamic leader with a background in project management and operations. As the COO of Hebron Startup Lab, she ensures the smooth functioning of daily operations and fosters a collaborative environment for entrepreneurs.
+   - Bio: Name 2 is a dynamic leader with a background in project management and operations. As the COO of Hebron Startup Lab, she ensures the smooth functioning of daily operations and fosters a collaborative environment for entrepreneurs.
 
 3. **Name 3**
    - Role: Head of Community Engagement
-   - Bio: Michael is a community builder and advocate for startups. With his expertise in networking and event management, he brings together entrepreneurs, investors, and mentors to create a vibrant startup community at Hebron Startup Lab.
+   - Bio: Name 3 is a community builder and advocate for startups. With his expertise in networking and event management, he brings together entrepreneurs, investors, and mentors to create a vibrant startup community at Hebron Startup Lab.
 
 4. **Name 4**
    - Role: Marketing Specialist
-   - Bio: Sarah is a creative marketing expert with a passion for storytelling. She drives the lab's marketing efforts, helping startups gain visibility and reach their target audiences effectively.
+   - Bio: Name 4 is a creative marketing expert with a passion for storytelling. She drives the lab's marketing efforts, helping startups gain visibility and reach their target audiences effectively.
 
 5. **Name 5**
    - Role: Technical Lead
-   - Bio: David is a tech-savvy individual with a background in software development. As the Technical Lead at Hebron Startup Lab, he oversees the implementation of tech solutions and ensures a seamless digital experience for members.
+   - Bio: Name 5 is a tech-savvy individual with a background in software development. As the Technical Lead at Hebron Startup Lab, he oversees the implementation of tech solutions and ensures a seamless digital experience for members.
 
 Each member of the HSL team brings a unique set of skills and experiences to the table, fostering an environment that nurtures innovation and success for all startups in the community.
 
