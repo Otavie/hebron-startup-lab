@@ -39,6 +39,10 @@ html {
   width: 100%;
 }
 
+.landing-image {
+  width: 100%;
+}
+
 .landing-page__slider {
   min-height: calc(100% - 25px);
   display: -ms-grid;
@@ -165,6 +169,10 @@ html {
 h1.landing-page__slider__each-slide__text__h1-bottom {
   margin-top: 2rem;
   font-size: 3rem;
+}
+
+.welcome {
+  background-color: red;
 }
 
 .welcome-text-container {
