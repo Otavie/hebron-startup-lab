@@ -176,6 +176,7 @@ nav.show {
 
 nav ul li a.nav-back {
   background-color: var(--main-black-color);
+  background-color: green;
   border: 1px solid var(--main-white-color);
 }
 
